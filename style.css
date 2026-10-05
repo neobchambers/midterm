@@ -1,0 +1,1125 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+
+    font-family: Georgia, "Times New Roman", serif;
+
+    background-color: #f5efe6;
+
+    color: #2d2520;
+
+    line-height: 1.6;
+}
+
+.site-wrapper {
+    width: 100%;
+    min-height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* =========================================
+   NAVIGATION
+========================================= */
+
+.restaurant-nav {
+    background-color: #2d2520;
+
+    margin: 0;
+
+    min-height: 70px;
+
+    box-shadow: 0 3px 15px rgba(0, 0, 0, 0.15);
+
+    position: relative;
+    z-index: 100;
+}
+
+.restaurant-nav .container {
+    max-width: 1100px;
+}
+
+.restaurant-nav .navbar-brand {
+    color: #f5efe6;
+
+    font-size: 25px;
+
+    font-weight: bold;
+
+    letter-spacing: 1px;
+
+    transition: color 0.3s ease;
+}
+
+.restaurant-nav .navbar-brand:hover {
+    color: #c89b63;
+}
+
+.restaurant-nav .nav-link {
+    color: #f5efe6;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    font-size: 14px;
+
+    padding: 8px 15px;
+
+    margin: 0 3px;
+
+    border-radius: 5px;
+
+    transition:
+        background-color 0.3s ease,
+        color 0.3s ease;
+}
+
+.restaurant-nav .nav-link:hover {
+    color: #ffffff;
+
+    background-color: #7b3f35;
+}
+
+.restaurant-nav .navbar-toggler {
+    border-color: #c89b63;
+}
+
+.restaurant-nav .navbar-toggler-icon {
+    filter: brightness(0) invert(1);
+}
+
+
+/* =========================================
+   MAIN
+========================================= */
+
+main {
+    flex: 1;
+}
+
+.container {
+    max-width: 1100px;
+}
+
+.page-title {
+    text-align: center;
+
+    color: #2d2520;
+
+    font-size: 38px;
+
+    font-weight: bold;
+
+    margin: 15px 0 40px;
+
+    position: relative;
+}
+
+.page-title::after {
+    content: "";
+
+    display: block;
+
+    width: 60px;
+
+    height: 3px;
+
+    background-color: #9b5143;
+
+    margin: 12px auto 0;
+
+    border-radius: 10px;
+}
+
+
+/* =========================================
+   HOME PAGE
+========================================= */
+
+.home-section {
+    background-color: #f5efe6;
+
+    margin-top: 0;
+
+    padding: 90px 30px;
+
+    min-height: 520px;
+
+    display: flex;
+
+    align-items: center;
+}
+
+.home-content {
+    width: 100%;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 70px;
+}
+
+.home-text {
+    width: 48%;
+}
+
+.home-text h1 {
+    font-size: 50px;
+
+    line-height: 1.15;
+
+    color: #2d2520;
+
+    font-weight: bold;
+
+    margin-bottom: 20px;
+}
+
+.home-text p {
+    font-family: Arial, Helvetica, sans-serif;
+
+    font-size: 17px;
+
+    color: #6c5d53;
+
+    line-height: 1.7;
+
+    max-width: 430px;
+
+    margin-bottom: 30px;
+}
+
+
+/* Buttons */
+
+.home-buttons {
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+
+    margin-top: 20px;
+}
+
+.main-button,
+.secondary-button {
+    text-decoration: none;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    font-size: 14px;
+
+    font-weight: bold;
+
+    padding: 12px 22px;
+
+    border-radius: 5px;
+
+    display: inline-block;
+
+    transition:
+        transform 0.2s ease,
+        background-color 0.3s ease,
+        color 0.3s ease;
+}
+
+.main-button {
+    background-color: #7b3f35;
+
+    color: white;
+
+    border: 1px solid #7b3f35;
+}
+
+.main-button:hover {
+    background-color: #5f3029;
+
+    color: white;
+
+    transform: translateY(-2px);
+}
+
+.secondary-button {
+    background-color: transparent;
+
+    color: #7b3f35;
+
+    border: 1px solid #7b3f35;
+}
+
+.secondary-button:hover {
+    background-color: #7b3f35;
+
+    color: white;
+
+    transform: translateY(-2px);
+}
+
+
+/* Restaurant Image */
+
+.restaurant-image {
+    width: 48%;
+
+    min-height: 330px;
+
+    background:
+        linear-gradient(
+            rgba(45, 37, 32, 0.2),
+            rgba(45, 37, 32, 0.55)
+        ),
+        linear-gradient(
+            135deg,
+            #9b5143,
+            #c89b63
+        );
+
+    color: white;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    font-size: 18px;
+
+    font-weight: bold;
+
+    letter-spacing: 1px;
+
+    border-radius: 10px;
+
+    box-shadow: 0 15px 35px rgba(45, 37, 32, 0.2);
+
+    position: relative;
+
+    overflow: hidden;
+}
+
+.restaurant-image::before {
+    content: "RESTAURANT";
+
+    position: absolute;
+
+    font-size: 50px;
+
+    opacity: 0.08;
+
+    transform: rotate(-20deg);
+}
+
+
+/* =========================================
+   MENU
+========================================= */
+
+.menu-page {
+    background-color: #f5efe6;
+
+    padding: 60px 30px;
+
+    min-height: 650px;
+}
+
+.menu-section {
+    margin-bottom: 50px;
+}
+
+.menu-section h2 {
+    font-size: 25px;
+
+    color: #7b3f35;
+
+    font-weight: bold;
+
+    margin-bottom: 25px;
+
+    text-transform: uppercase;
+
+    letter-spacing: 1px;
+}
+
+.menu-grid {
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 25px;
+
+    max-width: 900px;
+}
+
+.menu-card {
+    background-color: #fffaf4;
+
+    min-height: 130px;
+
+    padding: 25px;
+
+    border-radius: 8px;
+
+    border: 1px solid #eadbc9;
+
+    box-shadow: 0 7px 20px rgba(70, 50, 40, 0.08);
+
+    position: relative;
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+.menu-card:hover {
+    transform: translateY(-5px);
+
+    box-shadow: 0 12px 25px rgba(70, 50, 40, 0.15);
+}
+
+.menu-card h3 {
+    font-size: 20px;
+
+    color: #2d2520;
+
+    margin: 0 0 10px;
+
+    font-weight: bold;
+}
+
+.menu-card p {
+    font-family: Arial, Helvetica, sans-serif;
+
+    font-size: 14px;
+
+    color: #75675e;
+
+    margin: 0;
+
+    max-width: 70%;
+}
+
+.menu-card span {
+    position: absolute;
+
+    right: 25px;
+
+    top: 25px;
+
+    color: #9b5143;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    font-size: 18px;
+
+    font-weight: bold;
+}
+
+
+/* =========================================
+   ABOUT PAGE
+========================================= */
+
+.about-page {
+    background-color: #f5efe6;
+
+    padding: 60px 30px;
+
+    min-height: 650px;
+}
+
+.about-story {
+    display: flex;
+
+    align-items: center;
+
+    gap: 70px;
+
+    margin-top: 20px;
+
+    margin-bottom: 60px;
+}
+
+.about-image {
+    width: 48%;
+
+    min-height: 300px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #9b5143,
+            #c89b63
+        );
+
+    color: white;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    font-size: 18px;
+
+    border-radius: 10px;
+
+    box-shadow: 0 15px 30px rgba(45, 37, 32, 0.15);
+}
+
+.story-content {
+    width: 48%;
+}
+
+.story-content h2 {
+    font-size: 32px;
+
+    color: #7b3f35;
+
+    margin-bottom: 20px;
+}
+
+.story-content p {
+    font-family: Arial, Helvetica, sans-serif;
+
+    font-size: 15px;
+
+    color: #655850;
+
+    line-height: 1.8;
+
+    margin-bottom: 15px;
+}
+
+
+/* Team */
+
+.team-section {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 25px;
+
+    margin-top: 30px;
+}
+
+.team-card {
+    text-align: center;
+
+    background-color: #fffaf4;
+
+    padding: 20px;
+
+    border-radius: 8px;
+
+    border: 1px solid #eadbc9;
+
+    box-shadow: 0 5px 18px rgba(70, 50, 40, 0.08);
+}
+
+.team-photo {
+    height: 150px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #d7b892,
+            #9b5143
+        );
+
+    color: white;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    border-radius: 6px;
+
+    margin-bottom: 15px;
+}
+
+.team-card p {
+    font-size: 16px;
+
+    color: #7b3f35;
+
+    font-weight: bold;
+
+    margin: 0;
+}
+
+
+/* =========================================
+   RESERVATION
+========================================= */
+
+.reservation-page {
+    background-color: #f5efe6;
+
+    padding: 60px 30px;
+
+    min-height: 650px;
+}
+
+.reservation-form {
+    width: 500px;
+
+    max-width: 100%;
+
+    margin: 0 auto;
+
+    background-color: #fffaf4;
+
+    padding: 35px;
+
+    border-radius: 10px;
+
+    border: 1px solid #eadbc9;
+
+    box-shadow: 0 10px 30px rgba(70, 50, 40, 0.1);
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 8px;
+}
+
+.reservation-form label {
+    font-family: Arial, Helvetica, sans-serif;
+
+    font-size: 13px;
+
+    font-weight: bold;
+
+    color: #4e4038;
+
+    margin-top: 8px;
+}
+
+.reservation-form input {
+    height: 42px;
+
+    border: 1px solid #d8c5b0;
+
+    background-color: white;
+
+    color: #2d2520;
+
+    padding: 8px 12px;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    font-size: 14px;
+
+    border-radius: 5px;
+
+    outline: none;
+}
+
+.reservation-form input:focus {
+    border-color: #9b5143;
+
+    box-shadow: 0 0 0 3px rgba(155, 81, 67, 0.1);
+}
+
+.reservation-button {
+    background-color: #7b3f35;
+
+    color: white;
+
+    border: none;
+
+    padding: 12px 20px;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    font-size: 14px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    margin-top: 18px;
+
+    border-radius: 5px;
+
+    transition: background-color 0.3s ease;
+}
+
+.reservation-button:hover {
+    background-color: #5f3029;
+}
+
+
+/* Reservation table */
+
+.reservation-table {
+    margin: 45px auto 0;
+
+    width: 600px;
+
+    max-width: 100%;
+}
+
+.reservation-table h2 {
+    font-size: 22px;
+
+    color: #7b3f35;
+
+    margin-bottom: 15px;
+}
+
+.reservation-table table {
+    width: 100%;
+
+    border-collapse: collapse;
+
+    background-color: #fffaf4;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    font-size: 13px;
+
+    box-shadow: 0 5px 15px rgba(70, 50, 40, 0.07);
+}
+
+.reservation-table th {
+    background-color: #7b3f35;
+
+    color: white;
+
+    font-weight: bold;
+}
+
+.reservation-table th,
+.reservation-table td {
+    border: 1px solid #eadbc9;
+
+    padding: 12px;
+
+    text-align: center;
+}
+
+.reservation-table tr:nth-child(even) {
+    background-color: #f8f0e6;
+}
+
+
+/* =========================================
+   CONTACT
+========================================= */
+
+.contact-page {
+    background-color: #f5efe6;
+
+    padding: 60px 30px;
+
+    min-height: 650px;
+}
+
+.contact-grid {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 60px;
+
+    margin-top: 30px;
+}
+
+.contact-info {
+    background-color: #2d2520;
+
+    color: #f5efe6;
+
+    padding: 35px;
+
+    border-radius: 10px;
+
+    box-shadow: 0 10px 30px rgba(45, 37, 32, 0.15);
+}
+
+.contact-info h2 {
+    font-size: 27px;
+
+    color: #c89b63;
+
+    margin-bottom: 25px;
+}
+
+.contact-info p {
+    font-family: Arial, Helvetica, sans-serif;
+
+    font-size: 14px;
+
+    margin: 8px 0;
+
+    color: #e7ddd4;
+}
+
+.contact-form {
+    background-color: #fffaf4;
+
+    padding: 35px;
+
+    border-radius: 10px;
+
+    border: 1px solid #eadbc9;
+
+    box-shadow: 0 10px 30px rgba(70, 50, 40, 0.1);
+}
+
+.contact-form form {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 8px;
+}
+
+.contact-form label {
+    font-family: Arial, Helvetica, sans-serif;
+
+    font-size: 13px;
+
+    font-weight: bold;
+
+    color: #4e4038;
+
+    margin-top: 8px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+
+    border: 1px solid #d8c5b0;
+
+    background-color: white;
+
+    color: #2d2520;
+
+    padding: 10px;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    font-size: 14px;
+
+    border-radius: 5px;
+
+    outline: none;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border-color: #9b5143;
+
+    box-shadow: 0 0 0 3px rgba(155, 81, 67, 0.1);
+}
+
+
+/* =========================================
+   FOOTER
+========================================= */
+
+.footer {
+    background-color: #2d2520;
+
+    color: #e7ddd4;
+
+    margin: 0;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    font-size: 13px;
+}
+
+.footer-top {
+    max-width: 1100px;
+
+    margin: 0 auto;
+
+    min-height: 55px;
+
+    padding: 15px 30px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 15px;
+
+    border-bottom: 1px solid #51453e;
+}
+
+.footer-top a {
+    color: #c89b63;
+
+    text-decoration: none;
+
+    font-weight: bold;
+}
+
+.footer-top a:hover {
+    color: white;
+}
+
+.copyright {
+    margin-left: auto;
+
+    color: #a99b91;
+}
+
+.footer-bottom {
+    max-width: 1100px;
+
+    margin: 0 auto;
+
+    padding: 15px 30px;
+
+    display: flex;
+
+    justify-content: center;
+
+    gap: 30px;
+}
+
+.footer-bottom p {
+    margin: 0;
+
+    color: #a99b91;
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 992px) {
+
+    .restaurant-nav .nav-link {
+        padding: 8px;
+    }
+
+
+    .home-content {
+        gap: 35px;
+    }
+
+
+    .home-text h1 {
+        font-size: 40px;
+    }
+
+
+    .about-story {
+        gap: 35px;
+    }
+
+
+    .contact-grid {
+        gap: 30px;
+    }
+
+
+    .footer-top,
+    .footer-bottom {
+        padding-left: 20px;
+
+        padding-right: 20px;
+    }
+
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 576px) {
+
+    .restaurant-nav {
+        min-height: 60px;
+    }
+
+
+    .restaurant-nav .navbar-brand {
+        font-size: 20px;
+    }
+
+
+    .page-title {
+        font-size: 30px;
+
+        margin-bottom: 30px;
+    }
+
+
+    /* Home */
+
+    .home-section {
+        padding: 55px 20px;
+    }
+
+
+    .home-content {
+        flex-direction: column;
+
+        gap: 35px;
+    }
+
+
+    .home-text,
+    .restaurant-image {
+        width: 100%;
+    }
+
+
+    .home-text h1 {
+        font-size: 35px;
+    }
+
+
+    .home-text p {
+        font-size: 15px;
+    }
+
+
+    .home-buttons {
+        flex-direction: column;
+
+        align-items: stretch;
+    }
+
+
+    .main-button,
+    .secondary-button {
+        text-align: center;
+    }
+
+
+    .restaurant-image {
+        min-height: 230px;
+    }
+
+
+    /* Menu */
+
+    .menu-page {
+        padding: 45px 20px;
+    }
+
+
+    .menu-grid {
+        grid-template-columns: 1fr;
+    }
+
+
+    /* About */
+
+    .about-page {
+        padding: 45px 20px;
+    }
+
+
+    .about-story {
+        flex-direction: column;
+
+        gap: 30px;
+    }
+
+
+    .about-image,
+    .story-content {
+        width: 100%;
+    }
+
+
+    .about-image {
+        min-height: 220px;
+    }
+
+
+    .team-section {
+        grid-template-columns: 1fr;
+    }
+
+
+    /* Reservation */
+
+    .reservation-page {
+        padding: 45px 20px;
+    }
+
+
+    .reservation-form {
+        padding: 25px;
+    }
+
+
+    /* Contact */
+
+    .contact-page {
+        padding: 45px 20px;
+    }
+
+
+    .contact-grid {
+        grid-template-columns: 1fr;
+    }
+
+
+    /* Footer */
+
+    .footer-top {
+        flex-wrap: wrap;
+
+        justify-content: center;
+
+        text-align: center;
+    }
+
+
+    .copyright {
+        width: 100%;
+
+        margin-left: 0;
+
+        margin-top: 5px;
+    }
+
+
+    .footer-bottom {
+        flex-direction: column;
+
+        align-items: center;
+
+        gap: 5px;
+
+        text-align: center;
+    }
+
+}
