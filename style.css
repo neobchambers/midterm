@@ -271,8 +271,7 @@ main {
 /* Restaurant Image */
 
 .restaurant-image {
-    width: 48%;
-
+    width: 100%;
     min-height: 330px;
 
     background:
